@@ -1,0 +1,493 @@
+console.clear();
+var car={ 
+    "car1":"300",
+    "car2":"400",
+    "car3":"500"
+}
+console.log(car);
+console.log(typeof(car));
+console.clear();
+var car={
+    name:"agera",
+    manufacture:{
+        name:"civic",
+        loc:"mian",
+    },
+    speed:429,
+    color:"red",
+    applybreak:function(){
+        console.log('car stp')
+    }
+}
+console.log(car.name);
+console.log(car.speed);
+console.log(car.manufacture);
+console.log(car.applybreak()); 
+console.clear();
+var wao=['p','m','n'];
+wao[5]='y';
+console.log(wao);
+
+var waa=wao.pop();
+console.log(waa);
+console.log(wao);
+console.clear();
+var exp=['p','m','n','o','x','z']; 
+exp.splice(3,0,'don','ha')
+console.log(exp);
+exp.slice(0,2)
+console.log(exp);
+exp.sort();
+console.log(exp);
+exp.reverse();
+console.log(exp);
+console.clear();
+
+}
+for(let i=0;i<10;i++)
+{
+console.log(i);
+
+}
+
+console.clear();
+let arr=[1,2,3,4];
+arr.forEach(function(element)
+{
+console.log(element);
+});
+console.clear();
+let obj={
+    name:"ali",
+    age:78,
+    type:"woa",
+    os:"ubuntu"
+
+}
+for(let key in obj)
+{
+    console.log(obj[key])
+}
+console.clear();
+let name1='ali';
+console.log(name1
+);
+var i=234;
+console.log(i);
+function ul(name) {
+    var i=9;
+      return "tis uus ${name} ul";  
+}
+console.log(ui("harry"),i)
+
+let a =window.document;
+//alert('hello harry')
+//a=prompt('destroy.type your name');
+//a=confirm('delete this');
+location.toString();
+console.log(a);
+
+var a=document;
+//a=document.body;
+array.from(a).foreach(function(element)){
+    console.log(element);
+}
+
+
+//console.log(a);
+
+/*let a=document.getElementById('fist')
+//a=a.parentNode;
+//a=a.childNodes;
+a.style.color='red'
+a.innerText='ood boy'
+a.innerHTML='<b>wjkajdlkjs</b>'
+
+//console.log(innerText);
+//single ele sel
+let b=document.querySelector('#fist');
+b=document.querySelector('.child')
+b=document.querySelector('b')*/
+
+//console.log(b);
+//mul ele sel
+let c=document.getElementsByTagName('div')
+
+console.log(c);
+for (let index = 0; index < c.length; index++) {
+    const element = c[index];
+    console.log(element);
+    element.stylecolor="blue";
+    
+}
+console.log('Welcome');
+
+/*let cont=document.querySelector('.child');
+ cont=document.querySelector('.container');
+
+//console.log(cont.childNodes);
+//console.log(cont.children);
+let nodename=container.childNodes[1].nodename;
+console.log(nodename);*/
+
+let container=document.querySelector('div.container');
+//console.log(container.children[1].children[0].children);
+console.log(container.firstElementChild.parentNode);
+console.log(container.firstElementChild.nextElementSibling);
+
+/*console.log('welcome');
+let element=document.createElement('li');
+let text=document.createTextNode('i am hero');
+element.appendChild(text);
+element.className='cho';
+element.id='createli';
+element.setAttribute('title','my title');
+//element.innerText='helo';
+//element.style.color='red';
+let ul=document.querySelector('ul.this');
+
+ul.appendChild(element);
+//console.log(ul);
+//console.log(element);
+let elem2=document.createElement('h3');
+elem2.className='elem2';
+elem2.id='elem2';
+let t2=document.createTextNode('malik ahtesham');
+elem2.appendChild(t2);
+element.replaceWith(elem2);
+let myul=document.getElementById('myul');
+myul.replaceWith(element,document.getElementById('myfu'));
+
+let head=document.createElement('h1');
+let t3=document.createTextNode('go to cde with herry');
+head.setAttribute('href','https://www.codewithharry.com');
+let ul=document.querySelector('ul.this')
+
+
+head.append(t3);
+
+ul.append(head);
+
+console.log(head);*/
+
+console.log('welcome');
+document.getElementById('h').addEventListener
+('mouseover',function(e)
+{
+    let variable;
+console.log('you have clicke dhere');
+//Location.href='https://youtu.be/uAR-M3Xz8ZA?t=4'
+
+variable=e.target;
+variable=e.target.className;
+variable=Array.from(e.target.classlist);
+variable=e.target.id;
+variable=e.offsetX;
+variable=e.offsety;
+variable=e.clientX;
+variable=e.clientY;
+
+console.log(variable);
+
+});
+
+console.log('wel');
+/*let btn=document.getElementById('btn');
+btn.addEventListener('click',fun1);
+btn.addEventListener('dbclick',fun2);
+function fun1(e)
+{
+    console.log("thanks",e);
+    
+}
+
+function fun2(e)
+{
+    console.log("thanks double",e);
+
+    
+}
+
+document.querySelector('.container').addEventListener
+('mouseenter',function()
+{
+    console.log("yrr kdms")
+});
+*/
+document.querySelector('.container').addEventListener
+('mousemove',function()
+{
+    console.log(e.offsetX,e.offsetY);
+    document.body.style.backgroundColor='red';
+    console.log("yrr kdms")
+});
+
+
+
+console.log( 'welcome to java script');
+/*let btn=document.getElementById('btn');
+btn.addEventListener('click',func1);
+btn.addEventListener('dblclick',func2)
+
+function func1(e)
+{
+    //console.log("thanks",e);
+    e.preventDefault();
+
+}
+function func2(e)
+{
+    console.log("thanks dbl",e);
+    e.preventDefault();
+
+}
+document.querySelector('.this')
+.addEventListener(
+
+    'mousemove',function(e){
+        console.log(e.offsetX,e.offsetY)
+        document.body.style.backgroundColor='rgb($(e.offsetX),$(e.offsetX,154)';
+        console.log('you trigered mpuse')
+    }
+)
+let str ='python';
+let links=document.links;
+console.log(links);
+let href;
+Array.from(links).forEach(function(element)
+{
+href=element.href;
+if(href.includes(str))
+{
+console.log(href);
+}
+}
+)
+let array=['adrak','pyas','bhindi']
+localStorage.setItem('sabzi',jSON.stringfy(array))
+localStorage.setItem('name','malik')
+localStorage.setItem('name2','ahtesham')
+localStorage.removeItem('name');
+let name=localStorage.getItem('name')
+console.log(name2)
+
+console.log('welcome')
+let div=document.createElement('div');
+div.setAttribute("id","edit");
+div.innerText="dbl click on me to edit";
+
+div.addEventListener('mouseover',function()
+{
+    div.style.fontSize='150%';
+})
+console.log(div);
+document.body.appendChild(div);
+
+let inpt=document.createElement('inpt');
+inpt.setAttribute("value","")
+document.getElementById('edit').addEventListener('mouseover',function(){
+
+    div.replaceWith(inpt);
+})
+console.log('inpt')
+
+inpt.addEventListener('blur',function()
+{
+    localStorage.setItem('edited',JSON.stringify(inpt.value))
+})
+
+
+
+console.log('welcome')
+/*let x=9;
+let y=3;
+let z
+z=Math;
+z=Math.round(5.4);
+z=Math.ceil(5.2);
+z=Math.floor(5.9);
+z=Math.sqrt(5);
+z=Math.pow(2,3);
+z=Math.min(2,4,6,8);
+z=Math.random();
+z=100*Math.random();
+
+z=m=Math.ceil(150+(100-150)*Math.random());
+console.log(z);*/
+let today=new Date();
+//console.log(today);
+let otherdate=new Date('june 13 1977 04:44:08');
+console.log(otherdate)
+let a;
+a=otherdate.getDay();
+a=otherdate.getSeconds();
+a=otherdate.getTime();
+a=otherdate.getMonth();
+console.log(a);
+
+
+
+console.log('welcome to malik ahtesham')
+
+let divelem=document.createElement('div');
+let val=localStorage.getItem('text');
+let text;
+if(val==null){
+text=document.createTextNode('tis is ele edit it')
+}
+else
+{
+    text=document.createTextNode(val);
+}
+divelem.appendChild(text);
+divelem.setAttribute('id','elem');
+divelem.setAttribute('style',"border:2px solid black;width:154px;margin:34px;padding:23px");
+
+
+let container=document.querySelector('.container');
+
+
+let first=document.getElementById('fist');
+
+container.insertBefore(divelem,first);
+divelem.appendChild(text)
+console.log(divelem,container,first)
+
+divelem.addEventListener('click',function()
+{
+    let nota=document.getElementsByClassName('textarea').length;
+    if(nota==0){
+    let html=elem.innerHTML;
+    divelem.innerHTML='<textarea class="textarea" id="textarea" rows="3"></textarea>';
+}
+let textarea=document.getElementsByClassName('textarea');
+textarea.addEventListener('blur',function()
+{
+    elem.innerHTML=textarea.value;
+    localStorage.setItem('text',textarea.value)
+})
+})
+
+
+
+console.log('welcome')
+let car={
+    name:"mersendeees",
+    topspeed:100,
+    run:function()
+    {
+        console.log("car is running");
+    }
+}
+function gencar(carname,carspeed)
+{
+ this.name=carname;
+ this.speed=carspeed;
+ this.run=function()
+ {
+    console.log('${this.carname} is running');
+ }
+ this.analyze=function()
+ {
+    console.log('this car is ${200-this.carspeed}kmph slower than my car')
+ }
+}car1=new gencar('honda',100);
+car2=new gencar('nisan',100)
+
+console.log(car2);
+
+
+console.log('welcome')
+let obj={
+    name:"malik",
+    father:"ahmed",
+    address:"eartg"
+}
+function obj(givenname){
+    this.name=givenname;
+}
+obj.prototype.getname=function()
+{
+    return this.name;
+}
+let obj2=new obj("malik");
+console.log(obj);
+
+
+
+const proto={
+    slogan:function()
+    {
+        return 'this company is best';
+    },
+    chagename:function(newname)
+    {
+        this.name=newname
+    }
+
+}
+
+const harry=Object.create(proto);
+harry.name="harry";
+harry.role="progranmer";
+harry.chagename("ahtesham")
+console.log(harry)
+
+function Employee(name,salary,exp)
+{
+    this.name=name;
+    this.salary=salary;
+    this.experience=exp;
+}
+
+Employee.prototype.slogan=function()
+{
+    return 'this compamy is best' 
+}
+
+let harryobj=new Employee("harry",123,56);
+// console.log(harryobj.slogan())
+
+function progranmer(name,salary,exp,language)
+{
+    Employee.call(this,name,salary)
+    this.language=language;
+}
+progranmer.prototype=objrct.create(Employee.prototype);
+
+//manually set the constrictor
+progranmer.prototype.constructor=progranmer;
+
+let malik=new progranmer("malik",123,45,"javascript");
+console.log(malik)
+
+
+console.log("welcome ")
+
+function floor(sugar,water)
+{
+    this.sugar=sugar;
+    this.water=water;
+}
+
+//slogan
+floor.prototype.slogan=function()
+{
+    return 'this cake is best';
+}
+
+//create obj
+let make=new floor(5,100);
+console.log(make.slogan)
+
+function cake(sugar,water,oven)
+(
+    floor.call(this,sugar,water);
+    this.oven=oven;
+)
+//inherir
+cake.prototype=object.create(floor.prototype)
+
+cake.prototype.constructor=cake;
+let cook=new cake(3,4,5)
+console,log(cook)
